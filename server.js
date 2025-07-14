@@ -38,7 +38,7 @@ app.use('/api/medecins', medecinRoutes);
 app.use('/api/rendez-vous', rendezVousRoutes);
 app.use('/api/consultations', consultationRoutes);
 app.use('/api/stats', statsRoutes);
-app.use('/api/login', authRoutes);
+//app.use('/api/login', authRoutes);
 // Health check endpoint
 app.get('/api/health', async (req, res) => {
   try {
