@@ -51,6 +51,16 @@ const users = [
     role: 'secretaire',
     specialite: 'Accueil',
     telephone: '0123456793'
+  },
+  // Utilisateur de test simple
+  {
+    nom: 'Test',
+    prenom: 'User',
+    email: 'test@example.com',
+    password: 'test1234',
+    role: 'secretaire',
+    specialite: 'Test',
+    telephone: '0600000000'
   }
 ];
 
