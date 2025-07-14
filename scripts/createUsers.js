@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 import User from '../models/User.js';
-import { connectDB } from '../config/database.js';
 
 // Configuration de la base de données
 const MONGODB_URI = 'mongodb+srv://yacinemehdi2005:yacine2005@bucha.cxx8ull.mongodb.net/buchatech?retryWrites=true&w=majority&appName=bucha';
@@ -66,9 +65,9 @@ const users = [
 
 async function createUsers() {
   try {
-    // Connexion à la base de données
-    await connectDB();
-    console.log('✅ Connecté à la base de données');
+    // Connexion à la base de données Atlas
+    await mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+    console.log('✅ Connecté à la base de données Atlas');
 
     // Suppression des utilisateurs existants (optionnel)
     await User.deleteMany({});
