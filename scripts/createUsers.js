@@ -3,7 +3,7 @@ import User from '../models/User.js';
 import { connectDB } from '../config/database.js';
 
 // Configuration de la base de données
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/buchatech';
+const MONGODB_URI = 'mongodb+srv://yacinemehdi2005:yacine2005@bucha.cxx8ull.mongodb.net/buchatech?retryWrites=true&w=majority&appName=bucha';
 
 // Liste des utilisateurs à créer
 const users = [
